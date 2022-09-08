@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrimeFinder 9,000,000 v5.1", "PrimeFinder 9,000,000 v5.1.vcxproj", "{EEA01453-A044-42A5-9176-75EB4DB5AE51}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "YouTube", "..\YouTube\YouTube.vcxproj", "{6685D0BC-F461-406D-B783-D9650CC531F2}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PrimeFinder 9000000 Release", "..\PrimeFinder 9000000 Release\PrimeFinder 9000000 Release.vdproj", "{DB9301C7-80A8-47F4-B7EF-46CD31B6DC9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,14 +23,10 @@ Global
 		{EEA01453-A044-42A5-9176-75EB4DB5AE51}.Release|x64.Build.0 = Release|x64
 		{EEA01453-A044-42A5-9176-75EB4DB5AE51}.Release|x86.ActiveCfg = Release|Win32
 		{EEA01453-A044-42A5-9176-75EB4DB5AE51}.Release|x86.Build.0 = Release|Win32
-		{6685D0BC-F461-406D-B783-D9650CC531F2}.Debug|x64.ActiveCfg = Debug|x64
-		{6685D0BC-F461-406D-B783-D9650CC531F2}.Debug|x64.Build.0 = Debug|x64
-		{6685D0BC-F461-406D-B783-D9650CC531F2}.Debug|x86.ActiveCfg = Debug|Win32
-		{6685D0BC-F461-406D-B783-D9650CC531F2}.Debug|x86.Build.0 = Debug|Win32
-		{6685D0BC-F461-406D-B783-D9650CC531F2}.Release|x64.ActiveCfg = Release|x64
-		{6685D0BC-F461-406D-B783-D9650CC531F2}.Release|x64.Build.0 = Release|x64
-		{6685D0BC-F461-406D-B783-D9650CC531F2}.Release|x86.ActiveCfg = Release|Win32
-		{6685D0BC-F461-406D-B783-D9650CC531F2}.Release|x86.Build.0 = Release|Win32
+		{DB9301C7-80A8-47F4-B7EF-46CD31B6DC9E}.Debug|x64.ActiveCfg = Debug
+		{DB9301C7-80A8-47F4-B7EF-46CD31B6DC9E}.Debug|x86.ActiveCfg = Debug
+		{DB9301C7-80A8-47F4-B7EF-46CD31B6DC9E}.Release|x64.ActiveCfg = Release
+		{DB9301C7-80A8-47F4-B7EF-46CD31B6DC9E}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
