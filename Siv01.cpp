@@ -35,6 +35,7 @@ long long thePrime04 = 0;
 
 void s01()//this is in another thread
 {
+	cout << "thread one started" << endl;
 	bool restart = true;
 	Siv siv;
 	while (restart)
@@ -60,6 +61,7 @@ void s01()//this is in another thread
 
 void s02()//dido
 {
+	cout << "thread two started" << endl;
 	bool restart = true;
 	Siv siv;
 	while (restart)
@@ -86,6 +88,7 @@ void s02()//dido
 
 void s03()//dido
 {
+	cout << "thread three started" << endl;
 	bool restart = true;
 	Siv siv;
 	while (restart)
@@ -112,6 +115,7 @@ void s03()//dido
 
 void s04()//dido
 {
+	cout << "thread four started" << endl;
 	bool restart = true;
 	Siv siv;
 	while (restart)
