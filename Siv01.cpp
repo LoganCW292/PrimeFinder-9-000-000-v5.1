@@ -299,8 +299,6 @@ void Siv::start()
 			break;
 		}
 		break;
-<<<<<<< HEAD
-=======
 	}
 
 	/*
@@ -351,7 +349,6 @@ void Siv::start()
 
 	*/
 
-	*/
 
 	check01();
 	if (Primer >= 3)
