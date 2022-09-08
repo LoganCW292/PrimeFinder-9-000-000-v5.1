@@ -12,6 +12,10 @@ char y = 'y';
 char Y = 'Y';
 string VOIDSTR;
 
+int thingy = 0;
+
+int numThreads = 0;
+
 bool done01 = false;
 bool done02 = false;
 bool done03 = false;
@@ -35,12 +39,12 @@ long long thePrime04 = 0;
 
 void s01()//this is in another thread
 {
-	cout << "thread one started" << endl;
+	//cout << "thread one started" << endl;
 	bool restart = true;
 	Siv siv;
 	while (restart)
 	{
-		cout << "thread one" << endl;
+		//cout << "thread one" << endl;
 		while (!(go01))
 		{
 			//waits very fast
@@ -62,12 +66,12 @@ void s01()//this is in another thread
 
 void s02()//dido
 {
-	cout << "thread two started" << endl;
+	//cout << "thread two started" << endl;
 	bool restart = true;
 	Siv siv;
 	while (restart)
 	{
-		cout << "thread two" << endl;
+		//cout << "thread two" << endl;
 		while (!(go02))
 		{
 			//waits very fast
@@ -90,12 +94,12 @@ void s02()//dido
 
 void s03()//dido
 {
-	cout << "thread three started" << endl;
+	//cout << "thread three started" << endl;
 	bool restart = true;
 	Siv siv;
 	while (restart)
 	{
-		cout << "thread three" << endl;
+		//cout << "thread three" << endl;
 		while (!(go03))
 		{
 			//waits very fast
@@ -118,12 +122,12 @@ void s03()//dido
 
 void s04()//dido
 {
-	cout << "thread four started" << endl;
+	//cout << "thread four started" << endl;
 	bool restart = true;
 	Siv siv;
 	while (restart)
 	{
-		cout << "thread four" << endl;
+		//cout << "thread four" << endl;
 		while (!(go04))
 		{
 			//waits very fast
@@ -156,12 +160,37 @@ void Siv::start()
 		{
 			break;
 		}
-		else if (userIn == "y" || "Y")
+		else if (userIn == "y" || userIn == "Y")
 		{
 			delay = 1600;
 			break;
 		}
+		break;
 	}
+	/*
+	cout << "Enter the number of threads your cpu has. (Max: 8)" << endl << endl;
+
+	while (getline(cin, userIn))
+	{
+		if (userIn.empty())
+		{
+			cout << endl << endl << "Need to know the number of threads! (Max: 8)" << endl << endl;
+			//cin.clear();
+		}
+		else
+		{
+			thingy = stoi(userIn);
+			if (thingy >= 1 && thingy <= 8)
+			{
+				numThreads = stoi(userIn);
+				break;
+			}
+			cout << endl << endl << "Need to know the number of threads! (Max: 8)" << endl << endl;
+		}
+		//cin.clear();
+	}
+
+	*/
 
 	check01();
 	if (Primer >= 3)
