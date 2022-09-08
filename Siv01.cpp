@@ -138,7 +138,7 @@ void s04()//dido
 
 void Siv::start()
 {
-	cout << "PrimeFinder 9,000,000 v5.20 multi-threaded" << endl << endl << "Created by Logan Worthington." << endl << endl;
+	cout << "PrimeFinder 9,000,000 v5.20 single-threaded" << endl << endl << "Created by Logan Worthington." << endl << endl;
 	cout << "See what prime you get too before this baby crashes!" << endl << endl;
 	cout << "Slow mode? (y/n)" << endl;
 
