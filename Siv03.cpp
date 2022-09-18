@@ -17,24 +17,25 @@ long long Siv::crunch(long long primer)
 	//gets 2 out of the way
 
 
-	long long x = 3;
-	long long y = 3;
+	int x = 3;
+	int y = 3;
 
 	if (primer == 2)
 	{
 		return primer;
 	}
 
-	if(primer > 2)
+	if (primer > 1000000)
 	{
-		while (x <= sqrt(primer))
+		while (x <= primer / 100000)
 		{
 			y = 3;
-			while (y <= primer / 3)
+			while (y <= primer / 6)
 			{
 				if (x * y == primer)
 				{
 					x = 3;
+					y = y + 2;
 					return 0;
 				}
 				y = y + 2;
@@ -44,5 +45,104 @@ long long Siv::crunch(long long primer)
 		x = 3;
 		return primer;
 	}
-	return primer;
+	else if(primer > 100000)
+	{
+		while (x <= primer / 10000)
+		{
+			y = 3;
+			while (y <= primer / 6)
+			{
+				if (x * y == primer)
+				{
+					x = 3;
+					y = y + 2;
+					return 0;
+				}
+				y = y + 2;
+			}
+			x = x + 2;
+		}
+		x = 3;
+		return primer;
+	}
+	else if (primer > 10000)
+	{
+		while (x <= primer / 1000)
+		{
+			y = 3;
+			while (y <= primer / 6)
+			{
+				if (x * y == primer)
+				{
+					x = 3;
+					y = y + 2;
+					return 0;
+				}
+				y = y + 2;
+			}
+			x = x + 2;
+		}
+		x = 3;
+		return primer;
+	}
+	else if (primer > 1000)
+	{
+		while (x <= primer / 100)
+		{
+			y = 3;
+			while (y <= primer / 3)
+			{
+				if (x * y == primer)
+				{
+					x = 3;
+					y = y + 2;
+					return 0;
+				}
+				y = y + 2;
+			}
+			x = x + 2;
+		}
+		x = 3;
+		return primer;
+	}
+	else if (primer > 100)
+	{
+		while (x <= primer / 10)
+		{
+			y = 3;
+			while (y <= primer / 3)
+			{
+				if (x * y == primer)
+				{
+					x = 3;
+					y = y + 2;
+					return 0;
+				}
+				y = y + 2;
+			}
+			x = x + 2;
+		}
+		x = 3;
+		return primer;
+	}
+	else
+	{
+		while (x <= primer / 2 + 1)
+		{
+			y = 3;
+			while (y <= primer / 3)
+			{
+				if (x * y == primer)
+				{
+					x = 3;
+					y = y + 2;
+					return 0;
+				}
+				y = y + 2;
+			}
+			x = x + 2;
+		}
+		x = 3;
+		return primer;
+	}
 }

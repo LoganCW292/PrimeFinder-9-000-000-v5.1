@@ -40,6 +40,7 @@ void s01()//this is in another thread
 	Siv siv;
 	while (restart)
 	{
+		cout << "thread one" << endl;
 		while (!(go01))
 		{
 			//waits very fast
@@ -66,6 +67,7 @@ void s02()//dido
 	Siv siv;
 	while (restart)
 	{
+		cout << "thread two" << endl;
 		while (!(go02))
 		{
 			//waits very fast
@@ -93,6 +95,7 @@ void s03()//dido
 	Siv siv;
 	while (restart)
 	{
+		cout << "thread three" << endl;
 		while (!(go03))
 		{
 			//waits very fast
@@ -120,6 +123,7 @@ void s04()//dido
 	Siv siv;
 	while (restart)
 	{
+		cout << "thread four" << endl;
 		while (!(go04))
 		{
 			//waits very fast
